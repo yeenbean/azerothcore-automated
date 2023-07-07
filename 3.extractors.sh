@@ -35,16 +35,16 @@ main() {
 
   # copy over binaries for extractors
   echo Copying map_extractor...
-  cp -v ~/azerothcore/build/bin/map_extractor ~/map_extractor
+  cp -v ~/azeroth-server/bin/map_extractor ~/map_extractor
 
   echo Copying mmaps_generator...
-  cp -v ~/azerothcore/build/bin/mmaps_generator ~/mmaps_generator
+  cp -v ~/azeroth-server/bin/mmaps_generator ~/mmaps_generator
 
   echo Copying vmap4_assembler...
-  cp -v ~/azerothcore/build/bin/vmap4_assembler ~/vmap4_assembler
+  cp -v ~/azeroth-server/bin/vmap4_assembler ~/vmap4_assembler
 
   echo Copying vmap4_extractor...
-  cp -v ~/azerothcore/build/bin/vmap4_extractor ~/vmap4_extractor
+  cp -v ~/azeroth-server/bin/vmap4_extractor ~/vmap4_extractor
 
 
   # build DBC and Maps files
@@ -60,11 +60,11 @@ main() {
 
 
   # move everything to the build directory
-  mkdir -v ~/azerothcore/build/data/
-  mv -v ./dbc ~/azerothcore/build/data/
-  mv -v ./maps ~/azerothcore/build/data/
-  mv -v ./vmaps ~/azerothcore/build/data/
-  mv -v ./mmaps ~/azerothcore/build/data/
+  mkdir -v ~/azeroth-server/data/
+  mv -v ./dbc ~/azeroth-server/data/
+  mv -v ./maps ~/azeroth-server/data/
+  mv -v ./vmaps ~/azeroth-server/data/
+  mv -v ./mmaps ~/azeroth-server/data/
 }
 
 
