@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# bash <(curl -s url)
+# bash <(curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/2.core.sh)
 
 
 init() {

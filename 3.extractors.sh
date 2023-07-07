@@ -4,7 +4,7 @@
 # You MUST copy the Data directory from the WotLK game directory to your $HOME
 # directory.
 #
-# bash <(curl -s url)
+# bash <(curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/3.extractors.sh)
 
 
 init() {
