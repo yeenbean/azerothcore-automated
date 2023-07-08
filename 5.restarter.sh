@@ -21,6 +21,13 @@ main() {
   curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/restarter/restarter.sh -O
   curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/restarter/shutdown.sh -O
   curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/restarter/world.sh -O
+
+  echo "Restarter scripts are now located in ./azeroth-server."
+  echo "Run restarter.sh to start the full server."
+  echo "Run shutdown.sh to--you guessed it--stop the server."
+  echo "If you are running a world server on a different host from your auth,"
+  echo "don't use restarter.sh. Instead, use auth.sh or world.sh depending on"
+  echo "your application."
 }
 
 
