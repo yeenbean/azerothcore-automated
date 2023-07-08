@@ -15,8 +15,8 @@ main() {
   cd ~/azeroth-server
 
   # start servers with screen
-  screen -AmdS auth ./bin/auth.sh
-  screen -AmdS world ./bin/world.sh
+  screen -AmdS auth ./auth.sh
+  screen -AmdS world ./world.sh
 }
 
 
