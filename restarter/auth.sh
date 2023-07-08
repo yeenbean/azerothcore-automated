@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-#
-# bash <(curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/1.deps.sh)
 
 
 init() {
@@ -13,8 +11,10 @@ init() {
 main() {
   init # run init function
 
-  # install dependencies
-  sudo apt update && sudo apt full-upgrade -y && sudo apt install git cmake make gcc g++ clang libssl-dev libbz2-dev libreadline-dev libncurses-dev libboost-all-dev mariadb-server mariadb-client libmariadb-dev libmariadb-dev-compat dialog screen
+  while :; do
+    ./bin/authserver
+    sleep 20
+  done
 }
 
 
