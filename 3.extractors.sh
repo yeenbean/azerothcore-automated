@@ -53,7 +53,6 @@ main() {
 
 
   # move everything to the build directory
-  mkdir -v ~/azeroth-server/
   mv -v ./dbc ~/azeroth-server/
   mv -v ./maps ~/azeroth-server/
   mv -v ./vmaps ~/azeroth-server/
