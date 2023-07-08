@@ -22,6 +22,11 @@ main() {
   curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/restarter/shutdown.sh -O
   curl -s https://raw.githubusercontent.com/yeenbean/azerothcore-automated/main/restarter/world.sh -O
 
+  chmod +x ./restarter.sh
+  chmod +x ./shutdown.sh
+  chmod +x ./auth.sh
+  chmod +x ./world.sh
+
   echo "Restarter scripts are now located in ./azeroth-server."
   echo "Run restarter.sh to start the full server."
   echo "Run shutdown.sh to--you guessed it--stop the server."
