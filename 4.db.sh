@@ -27,8 +27,20 @@ main() {
   cp -v azeroth-server/etc/authserver.conf.dist azeroth-server/etc/authserver.conf
   cp -v azeroth-server/etc/worldserver.conf.dist azeroth-server/etc/worldserver.conf
 
-  # next steps
-  dialog --msgbox "You now need to manually start authserver and worldserver together. This will create the database. Once this is created, shutdown both worldserver and authserver, login to the database using Keira3, and update the realmlist to point to this server's public IP address." 20 60
+  # warn user of next steps
+  dialog --msgbox "This script will now start the authserver and worldserver individually to populate the database. Once each server is started, stop it gracefully to continue the execution of the script." 20 60
+  clear
+
+  # change directory into the server root
+  cd ~/azeroth-server
+
+  # launch each server. the user is expected to manually shut them down after
+  # db is generated.
+  bin/authserver
+  bin/worldserver
+
+  # warn user of next steps
+  dialog --msgbox "Databases should now be populated. If required, login to the database using HeidiSQL via SSH tunnel and set the realmlist IP to your external WAN address." 20 60
   clear
 }
 
